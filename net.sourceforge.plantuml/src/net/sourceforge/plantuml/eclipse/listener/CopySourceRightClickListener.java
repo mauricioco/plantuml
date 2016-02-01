@@ -27,9 +27,9 @@ public class CopySourceRightClickListener extends RightClickListener {
      */
     protected void run() {
         // final ImageSelection imageSelection = new ImageSelection(diagram.getBufferedImage());
-    	String s = StringUtils.uncommentSource(diagram.getTextDiagram());
-    	final StringSelection sel = new StringSelection(s);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
+    	//String s = StringUtils.uncommentSource(diagram.getTextDiagram());
+    	//final StringSelection sel = new StringSelection(s);
+        //Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
     }
 
 }

@@ -5,12 +5,16 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
 import net.sourceforge.plantuml.Activator;
+import net.sourceforge.plantuml.BlockUml;
+import net.sourceforge.plantuml.CharSequence2;
 import net.sourceforge.plantuml.FileSystem;
 import net.sourceforge.plantuml.OptionFlags;
 import net.sourceforge.plantuml.SourceStringReader;
@@ -40,7 +44,7 @@ public class Diagram {
 	 * @enduml)
 	 */
 	private String textDiagram;
-
+	
 	/**
 	 * Current image number (for textDiagram with newpage instruction)
 	 */
@@ -95,7 +99,8 @@ public class Diagram {
 
 				// image generation.
 				SourceStringReader reader = new SourceStringReader(textDiagram);
-
+				//reader.getBlocks().add(new BlockUml(BlockUml.convert("splines=\"line\"\n"), 1));
+				
 				// Write the image to "os"
 				String desc = reader.generateImage(os, imageNumber);
 
@@ -150,7 +155,9 @@ public class Diagram {
 			ByteArrayOutputStream os = new ByteArrayOutputStream();
 
 			// image generation.
+			
 			SourceStringReader reader = new SourceStringReader(textDiagram);
+			
 			// Write the first image to "os"
 			String desc = reader.generateImage(os, 0);
 
