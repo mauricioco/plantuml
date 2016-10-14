@@ -119,6 +119,8 @@ public class Diagram {
 					is.close();
 
 				}
+			} catch (NullPointerException e) { 
+				// these happen all the time. Let's ignore them...
 			} catch (Throwable e) {
 				e.printStackTrace();
 				WorkbenchUtil.errorBox("Error during image generation.", e);

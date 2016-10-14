@@ -21,7 +21,7 @@
             icon="icons/p5.gif"
             category="net.sourceforge.plantuml.eclipse"
             class="net.sourceforge.plantuml.eclipse.views.PlantUmlView"
-            id="net.sourceforge.plantuml.eclipse.views.PlantUmlView">
+            id="net.sourceforge.plantuml.eclipse.views.PrimePlantUmlView">
       </view>
    </extension>
    <extension

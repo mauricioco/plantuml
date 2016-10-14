@@ -1,16 +1,16 @@
 package net.sourceforge.plantuml.eclipse.views;
 
-import net.sourceforge.plantuml.eclipse.actions.GenerateAction;
-import net.sourceforge.plantuml.eclipse.actions.ToggleButtonAction;
-import net.sourceforge.plantuml.eclipse.utils.PlantUmlUtils;
-import net.sourceforge.plantuml.eclipse.utils.PlantumlConstants;
-
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.IToolBarManager;
 import org.eclipse.jface.action.Separator;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IActionBars;
+
+import net.sourceforge.plantuml.eclipse.actions.GenerateAction;
+import net.sourceforge.plantuml.eclipse.actions.ToggleButtonAction;
+import net.sourceforge.plantuml.eclipse.utils.PlantUmlUtils;
+import net.sourceforge.plantuml.eclipse.utils.PlantumlConstants;
 
 /**
  * 
